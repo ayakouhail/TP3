@@ -1,87 +1,70 @@
-<main style="padding: 40px 10px; background-color: #F4D1D1; display: flex; flex-direction: column; align-items: center; gap: 40px;">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Caftan by Aya | Collection</title>
+    <style>
+        body { margin: 0; font-family: 'Georgia', serif; background-color: #FFFFFF; color: #333; }
+        header { background: white; padding: 20px; text-align: center; border-bottom: 2px solid #FFDBE9; }
+        nav a { text-decoration: none; color: #555; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 0.8em; }
+        nav a:hover { color: #d4af37; }
 
-    <h2 style="font-family: serif; color: white; text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); margin-bottom: 20px;">
-        ✨ La Collection Caftan by Aya ✨
-    </h2>
+        .container { padding: 40px; text-align: center; }
+        h2 { color: #F4D1D1; letter-spacing: 3px; margin-bottom: 40px; }
 
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img1.jpg" alt="Caftan Gris" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 1 : Gris Perle</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Une couleur très classe !"</p>
+        /* Grille de photos */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover; /* Pour que les photos ne soient pas déformées */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-grid img:hover { transform: scale(1.03); }
+
+        footer { background: #222; color: #FFDBE9; padding: 30px; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #F4D1D1; letter-spacing: 4px; margin: 0;">CAFTAN BY AYA</h1>
+        <nav style="margin-top: 15px;">
+            <a href="index.html">Accueil</a>
+            <a href="gallery.html">Collection</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>NOTRE COLLECTION</h2>
+        <div class="gallery-grid">
+            <img src="img1.jpg" alt="Caftan 1">
+            <img src="img2.jpg" alt="Caftan 2">
+            <img src="img3.jpg" alt="Caftan 3">
+            <img src="img4.jpg" alt="Caftan 4">
+            <img src="img5.jpg" alt="Caftan 5">
+            <img src="img6.jpg" alt="Caftan 6">
+            <img src="img7.jpg" alt="Caftan 7">
+            <img src="img8.webp" alt="Caftan 8">
+            <img src="img9.webp" alt="Caftan 9">
+            <img src="img10.webp" alt="Caftan 10">
         </div>
-    </article>
+    </div>
 
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img2.jpg" alt="Caftan Vert Pantalon" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 2 : Vert & Pantalon</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Moderne et confortable."</p>
-        </div>
-    </article>
+    <footer>
+        <p>&copy; 2026 Aya Kouhail - Créations d'Exception</p>
+    </footer>
 
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img3.jpg" alt="Caftan Burgandi" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 3 : Burgandi Royal</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Une couleur chaude et intense."</p>
-        </div>
-    </article>
-
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img4.jpg" alt="Caftan Beige" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 4 : Beige Sable</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"L'élégance du nude."</p>
-        </div>
-    </article>
-
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img5.jpg" alt="Caftan Noir et Doré" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 5 : Nuit Dorée</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Le chic absolu pour le soir."</p>
-        </div>
-    </article>
-
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img6.jpg" alt="Caftan Vert Roi" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 6 : Vert Roi</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Majestueux et traditionnel."</p>
-        </div>
-    </article>
-
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img7.jpg" alt="Caftan Noir Royal" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 7 : Noir Royal</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Le prestige du noir intense."</p>
-        </div>
-    </article>
-
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img8.webp" alt="Caftan Rose" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 8 : Douceur de Rose</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Doux et féminin."</p>
-        </div>
-    </article>
-
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img9.webp" alt="Caftan Vert Doré" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 9 : Forêt Dorée</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Éclatant de lumière."</p>
-        </div>
-    </article>
-
-    <article style="background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; width: 95%; border: 2px solid #FFDBE9;">
-        <img src="../images/img10.webp" alt="Caftan Rouge Doré" style="width: 100%; border-radius: 15px;">
-        <div style="padding: 15px 5px;">
-            <h3 style="margin: 0; color: #d4af37;">Modèle 10 : Passion Orientale</h3>
-            <p style="font-style: italic; color: #F4D1D1; font-weight: bold; margin-top: 10px;">"Le rouge éclatant de l'or."</p>
-        </div>
-    </article>
-
-</main>
+</body>
+</html>
