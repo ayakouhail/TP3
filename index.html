@@ -13,8 +13,8 @@
 
         /* Section Vidéo */
         .hero { position: relative; height: 70vh; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #000; }
-        .hero video { position: absolute; min-width: 100%; min-height: 100%; filter: brightness(50%); }
-        .hero-text { position: relative; color: white; text-align: center; }
+        .hero video { position: absolute; min-width: 100%; min-height: 100%; filter: brightness(50%); object-fit: cover; }
+        .hero-text { position: relative; color: white; text-align: center; z-index: 1; }
 
         /* Citation */
         .citation-box { padding: 80px 20px; background-color: #FFDBE9; text-align: center; }
@@ -36,8 +36,8 @@
         <h1 style="color: #F4D1D1; letter-spacing: 4px; margin: 0;">CAFTAN BY AYA</h1>
         <nav style="margin-top: 15px;">
             <a href="index.html">Accueil</a>
-            <a href="pages/gallery.html">Collection</a>
-            <a href="pages/contact.html">Contact</a>
+            <a href="gallery.html">Collection</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -53,7 +53,7 @@
 
     <section class="citation-box">
         <p>"L'élégance est la seule beauté qui ne se <span>fane jamais</span>."</p>
-        <p style="font-size: 0.5em; margin-top: 20px; color: #d4af37;">— Maison Aya Kouhail</p>
+        <p style="font-size: 0.8em; margin-top: 20px; color: #d4af37;">— Maison Aya Kouhail</p>
     </section>
 
     <section class="details">
