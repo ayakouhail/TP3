@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Caftan by Aya</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #F4D1D1; /* Rose Poudre */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            max-width: 550px;
+            width: 100%;
+            border: 3px solid #FFDBE9; /* Rose Bébé */
+            text-align: center;
+        }
+
+        h2 {
+            color: #d4af37; /* Or */
+            font-family: serif;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        p.subtitle {
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .info-detail {
+            background: #FFF9FA;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px dashed #F4D1D1;
+            color: #555;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        .info-detail:hover {
+            transform: scale(1.02);
+        }
+
+        .form-group {
+            text-align: left;
+            margin-top: 25px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #FFDBE9;
+            border-radius: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .map-text {
+            margin-top: 20px;
+            color: #d4af37;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #F4D1D1; margin: 0; font-family: serif; letter-spacing: 2px;">CAFTAN BY AYA</h1>
+        <nav style="margin-top: 15px;">
+            <a href="../index.html" style="text-decoration: none; color: #555; margin: 0 15px;">Accueil</a>
+            <a href="gallery.html" style="text-decoration: none; color: #555; margin: 0 15px;">Collection</a>
+            <a href="contact.html" style="text-decoration: none; color: #555; margin: 0 15px; font-weight: bold; border-bottom: 2px solid #d4af37;">Contact</a>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-card">
+            <h2>Contactez Aya Kouhail</h2>
+            <p class="subtitle">Créations sur mesure au cœur de Casablanca</p>
+
+            <a href="tel:0629700686" class="info-detail">📞 06 29 70 06 86</a>
+            <a href="mailto:ayakouhail9@gmail.com" class="info-detail">✉️ ayakouhail9@gmail.com</a>
+            <div class="info-detail">📍 Maarif, Casablanca, Maroc</div>
+
+            <form style="margin-top: 30px;">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre Nom" required>
+                    <textarea rows="3" placeholder="Quel modèle vous intéresse ?" style="margin-top: 10px;"></textarea>
+                </div>
+                <button type="submit">Prendre rendez-vous ✨</button>
+            </form>
+
+            <p class="map-text">✨ Bienvenue dans mon univers ✨</p>
+        </div>
+    </div>
+
+    <footer style="background: white; text-align: center; padding: 20px; color: #F4D1D1; margin-top: auto;">
+        <p>© 2026 Caftan by Aya Kouhail</p>
+    </footer>
+
+</body>
+</html>

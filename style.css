@@ -1,0 +1,29 @@
+/* Couleurs du site */
+:root {
+    --rose-poudre: #F4D1D1;
+    --rose-bebe: #FFDBE9;
+    --blanc: #FFFFFF;
+    --doré: #D4AF37; /* Pour une touche élégante */
+}
+
+body {
+    font-family: 'Playfair Display', serif; /* Une police élégante */
+    background-color: var(--rose-poudre);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--blanc);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--rose-bebe);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}

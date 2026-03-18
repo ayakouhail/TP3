@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Caftan by Aya | Accueil</title>
+    <style>
+        body { margin: 0; font-family: 'Georgia', serif; background-color: #FFFFFF; color: #333; }
+        
+        /* Navigation */
+        header { background: white; padding: 20px; text-align: center; border-bottom: 2px solid #FFDBE9; }
+        nav a { text-decoration: none; color: #555; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 0.8em; }
+        nav a:hover { color: #d4af37; }
+
+        /* Section Vidéo */
+        .hero { position: relative; height: 70vh; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #000; }
+        .hero video { position: absolute; min-width: 100%; min-height: 100%; filter: brightness(50%); }
+        .hero-text { position: relative; color: white; text-align: center; }
+
+        /* Citation */
+        .citation-box { padding: 80px 20px; background-color: #FFDBE9; text-align: center; }
+        .citation-box p { font-size: 1.8em; font-style: italic; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.5; }
+        .citation-box span { color: #d4af37; font-weight: bold; }
+
+        /* Section Infos */
+        .details { display: flex; justify-content: center; gap: 20px; padding: 50px; flex-wrap: wrap; background: white; }
+        .card { width: 280px; padding: 30px; border: 1px solid #F4D1D1; border-radius: 15px; text-align: center; }
+        .card h3 { color: #d4af37; }
+
+        /* Footer Noir & Rose */
+        footer { background: #222; color: #FFDBE9; padding: 40px; text-align: center; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #F4D1D1; letter-spacing: 4px; margin: 0;">CAFTAN BY AYA</h1>
+        <nav style="margin-top: 15px;">
+            <a href="index.html">Accueil</a>
+            <a href="pages/gallery.html">Collection</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text">
+            <h2 style="font-size: 3em; margin: 0;">L'Élégance de la Tradition</h2>
+            <p>Haute Couture • Casablanca • Maarif</p>
+        </div>
+    </section>
+
+    <section class="citation-box">
+        <p>"L'élégance est la seule beauté qui ne se <span>fane jamais</span>."</p>
+        <p style="font-size: 0.5em; margin-top: 20px; color: #d4af37;">— Maison Aya Kouhail</p>
+    </section>
+
+    <section class="details">
+        <div class="card">
+            <h3>✨ Qualité</h3>
+            <p>Tissus nobles et broderies faites à la main.</p>
+        </div>
+        <div class="card">
+            <h3>📍 Localisation</h3>
+            <p>Retrouvez-nous au quartier Maarif, Casablanca.</p>
+        </div>
+        <div class="card">
+            <h3>📞 Contact</h3>
+            <p>Appelez-nous au 06 29 70 06 86.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Aya Kouhail - Créatrice de Caftans d'Exception</p>
+        <p>Maarif, Casablanca | ayakouhail9@gmail.com</p>
+        <div style="margin-top: 20px; border-top: 1px solid #444; padding-top: 10px;">
+            &copy; 2026 Tous droits réservés.
+        </div>
+    </footer>
+
+</body>
+</html>
